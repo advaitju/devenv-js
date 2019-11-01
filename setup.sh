@@ -3,9 +3,6 @@
 echo "--- SETUP STARTED ---"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# Delete .git directory
-rm -rf $DIR/.git
-
 # Move dev env setup files
 mv $DIR/{.,}* $DIR/..
 
