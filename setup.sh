@@ -8,7 +8,7 @@ mv $DIR/{.,}* $DIR/..
 
 # Install packages
 mkdir -p $DIR/../node_modules
-npm i -D --prefix $DIR/.. eslint eslint-config-airbnb
+npm i -D --prefix $DIR/.. eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier
 npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
 
 # Delete setup script
