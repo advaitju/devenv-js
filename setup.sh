@@ -3,8 +3,8 @@
 echo "--- SETUP STARTED ---"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# Don't include README in devnenv setup
-rm $DIR/README.md
+# Delete .git files and don't include README in devnenv setup
+rm $DIR/.git $DIR/README.md
 
 # Move dev env setup files
 mv $DIR/{.,}* $DIR/..
