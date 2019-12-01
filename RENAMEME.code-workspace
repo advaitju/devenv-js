@@ -5,9 +5,9 @@
 		}
 	],
 	"settings": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.packageManager": "pnpm",
-		"eslint.autoFixOnSave": true
+		"editor.formatOnSave": false,
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"eslint.autoFixOnSave": true,
+		"eslint.packageManager": "pnpm"
 	}
 }
