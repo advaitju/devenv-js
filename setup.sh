@@ -1,8 +1,8 @@
 #!
 
-if [[ $1 == --n || $1 == -npm ]]; then
+if [[ $1 == -n || $1 == --npm ]]; then
 	echo "Selected packagemanager: npm"
-elif [[ $1 == --p || $1 == -pnpm ]]; then
+elif [[ $1 == -p || $1 == --pnpm ]]; then
 	echo "Selected packagemanager: pnpm"
 else
 	echo "Error: Specify whether to install with NPM (-p --npm) or PNPM (-p --pnpm)."
@@ -22,10 +22,10 @@ mv $DIR/{.,}* $DIR/..
 # Install packages
 mkdir -p $DIR/../node_modules
 
-if [[ $1 == --n || $1 == -npm ]]; then
+if [[ $1 == -n || $1 == --npm ]]; then
 	npm i -D --prefix $DIR/.. eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
 	npx install-peerdeps -d --prefix $DIR/.. eslint-config-airbnb
-elif [[ $1 == --p || $1 == -pnpm ]]; then
+elif [[ $1 == -p || $1 == --pnpm ]]; then
 	pnpm i -D --prefix $DIR/.. eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react- eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier prettier
 fi
 
