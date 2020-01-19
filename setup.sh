@@ -1,4 +1,4 @@
-#!
+#!/bin/bash
 
 if [[ $1 == -n || $1 == --npm ]]; then
 	echo "Selected packagemanager: npm"
