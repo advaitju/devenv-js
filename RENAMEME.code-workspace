@@ -7,7 +7,9 @@
 	"settings": {
 		"editor.formatOnSave": false,
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
-		"eslint.autoFixOnSave": true,
-		"eslint.packageManager": "pnpm"
+		"eslint.packageManager": "pnpm",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
 	}
 }
