@@ -1,6 +1,7 @@
 module.exports = {
 	extends: ['airbnb', 'prettier', 'prettier/react'],
 	plugins: ['prettier'],
+	parser: 'babel-eslint',
 	rules: {
 		'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
 		'prettier/prettier': [
