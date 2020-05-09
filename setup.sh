@@ -33,4 +33,6 @@ fi
 rm $DIR/../setup.sh
 rm -rf $DIR
 
-echo "\n--- SETUP COMPLETE ---\n"
+echo
+echo "--- SETUP COMPLETE ---"
+echo
