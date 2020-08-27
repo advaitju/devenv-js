@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [[ $1 == -n || $1 == --npm ]]; then
-	echo "Selected packagemanager: npm"
+	echo "Selected package-manager: npm"
 elif [[ $1 == -p || $1 == --pnpm ]]; then
-	echo "Selected packagemanager: pnpm"
+	echo "Selected package-manager: pnpm"
 else
 	echo "Error: Specify whether to install with NPM (-p --npm) or PNPM (-p --pnpm)."
 	exit 1
