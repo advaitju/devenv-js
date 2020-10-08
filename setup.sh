@@ -9,7 +9,9 @@ else
 	exit 1
 fi
 
+echo
 echo "--- SETUP STARTED ---" /bin/bash
+echo
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
