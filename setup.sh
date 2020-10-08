@@ -16,7 +16,8 @@ echo
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Delete .git files and don't include README in devnenv setup
-rm $DIR/.git $DIR/README.md
+rm -rf $DIR/.git
+rm $DIR/README.md
 
 # Move dev env setup files
 mv $DIR/{.,}* $DIR/..
