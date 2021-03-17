@@ -13,6 +13,7 @@ echo
 echo "--- SETUP STARTED ---" /bin/bash
 echo
 
+# Get path to devenv-js in current directory: ../project/devenv-js/
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Delete .git files and don't include README in devnenv setup
