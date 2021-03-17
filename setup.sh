@@ -18,7 +18,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo "Directory name: $DIR"
 
 IFS='/' read -ra ADDR <<< "$DIR"
-PWD_NAME=${ADDR[-1]}
+PWD_NAME=${ADDR[-2]}
 echo "Folder name: $PWD_NAME"
 
 # Delete .git files and don't include README in devnenv setup
