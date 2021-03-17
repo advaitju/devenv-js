@@ -15,11 +15,11 @@ echo
 
 # Get path to devenv-js in current directory: ../project/devenv-js/
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-echo "Directory name: $DIR"
+echo "Path: $DIR"
 
 IFS='/' read -ra ADDR <<< "$DIR"
 PWD_NAME=${ADDR[-2]}
-echo "Folder name: $PWD_NAME"
+echo "Folder: $PWD_NAME"
 
 # Delete .git files and don't include README in devnenv setup
 rm -rf $DIR/.git
