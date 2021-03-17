@@ -15,9 +15,11 @@ echo
 
 # Get path to devenv-js in current directory: ../project/devenv-js/
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo "Directory name: $DIR"
 
 IFS=';' read -ra ADDR <<< "$DIR"
 PWD_NAME=${DIR[-1]}
+echo "Folder name: $PWD_NAME"
 
 # Delete .git files and don't include README in devnenv setup
 rm -rf $DIR/.git
@@ -26,7 +28,7 @@ rm $DIR/README.md
 # Move dev env setup files
 mv $DIR/{.,}* $DIR/..
 # Rename VSCode workspace file to match current directory
-mv $DIR/../RENAMEME.code-workspace $DIR/../$PWD_NAME.code-workspace
+mv $DIR/../RENAMEME.code-workspace "$DIR/../$PWD_NAME.code-workspace"
 
 # Install packages
 mkdir -p $DIR/../node_modules
