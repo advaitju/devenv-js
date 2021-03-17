@@ -14,5 +14,10 @@ module.exports = {
 				trailingComma: 'es5',
 			},
 		],
+		'react/react-in-jsx-scope': 0,
+	},
+	env: {
+		browser: true,
+		node: true,
 	},
 };
