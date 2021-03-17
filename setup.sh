@@ -28,7 +28,7 @@ rm $DIR/README.md
 # Move dev env setup files
 mv $DIR/{.,}* $DIR/..
 # Rename VSCode workspace file to match current directory
-mv $DIR/../RENAMEME.code-workspace "$DIR/../$PWD_NAME.code-workspace"
+mv $DIR/../RENAMEME.code-workspace $DIR/../$PWD_NAME.code-workspace
 
 # Install packages
 mkdir -p $DIR/../node_modules
