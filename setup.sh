@@ -35,7 +35,7 @@ mkdir -p $DIR/../node_modules
 
 if [[ $1 == -n || $1 == --npm ]]; then
 	npm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
-	npx install-peerdeps -d --prefix $DIR/.. eslint-config-airbnb
+	npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
 elif [[ $1 == -p || $1 == --pnpm ]]; then
 	pnpm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react- eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier prettier
 fi
