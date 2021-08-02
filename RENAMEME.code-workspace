@@ -7,7 +7,7 @@
 	"settings": {
 		"editor.formatOnSave": false,
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
-		"eslint.packageManager": "npm", // npm or pnpm. Defaults to npm
+		"eslint.packageManager": "npm",
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": true
 		}
