@@ -26,7 +26,7 @@ rm -rf $DIR/.git
 rm $DIR/README.md
 
 # Move dev env setup files
-mv $DIR/{.,}* $DIR/..
+mv $DIR/* $DIR/.* .
 # Rename VSCode workspace file to match current directory
 mv $DIR/../RENAMEME.code-workspace $DIR/../$PWD_NAME.code-workspace
 
