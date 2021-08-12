@@ -1,7 +1,7 @@
 # devenv-js
 Development environment setup for JS projects.
 
-Run installation:
+Run installation in project root folder:
 ```sh
 ./devenv-js/setup.sh
 ```
