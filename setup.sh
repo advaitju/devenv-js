@@ -1,14 +1,5 @@
 #!/bin/bash
 
-if [[ $1 == -n || $1 == --npm ]]; then
-	echo "Selected package-manager: npm"
-elif [[ $1 == -p || $1 == --pnpm ]]; then
-	echo "Selected package-manager: pnpm"
-else
-	echo "Error: Specify whether to install with NPM (-p --npm) or PNPM (-p --pnpm)."
-	exit 1
-fi
-
 echo
 echo "--- SETUP STARTED ---" /bin/bash
 echo
@@ -32,13 +23,8 @@ mv $DIR/../RENAMEME.code-workspace $DIR/../$PWD_NAME.code-workspace
 
 # Install packages
 mkdir -p $DIR/../node_modules
-
-if [[ $1 == -n || $1 == --npm ]]; then
-	npm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
-	npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
-elif [[ $1 == -p || $1 == --pnpm ]]; then
-	pnpm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react- eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier prettier
-fi
+npm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
+npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
 
 # Delete setup script
 rm $DIR/../setup.sh
