@@ -23,8 +23,8 @@ mv $DIR/../RENAMEME.code-workspace $DIR/../$PWD_NAME.code-workspace
 
 # Install packages
 mkdir -p $DIR/../node_modules
-npm i -D --prefix $DIR/.. babel-eslint eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
-npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
+npm i -D --prefix $DIR/.. eslint @babel/eslint-parser @babel/preset-react eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
+# npx install-peerdeps -D --prefix $DIR/.. eslint-config-airbnb
 
 # Delete setup script
 rm $DIR/../setup.sh
