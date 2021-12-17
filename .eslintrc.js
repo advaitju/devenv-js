@@ -9,8 +9,6 @@ module.exports = {
 		},
 	},
 	rules: {
-		// 'react/prop-types': 0,
-		'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
 		'prettier/prettier': [
 			'error',
 			{
@@ -22,6 +20,14 @@ module.exports = {
 			},
 		],
 		'no-console': 'off',
+		// 'react/prop-types': 0,
+		'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+		'react/function-component-definition': [
+			2,
+			{
+				namedComponents: 'function-declaration',
+			},
+		],
 	},
 	env: {
 		node: true,
