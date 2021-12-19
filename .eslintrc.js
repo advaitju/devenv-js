@@ -20,7 +20,7 @@ module.exports = {
 			},
 		],
 		'no-console': 'off',
-		// 'react/prop-types': 0,
+		'react/prop-types': 0,
 		'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
 		'react/function-component-definition': [
 			2,
